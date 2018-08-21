@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    android:padding="@dimen/standard_view_margin">
+    <ScrollView
+        android:id="@+id/fragment_arterial_pressure_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@android:id/tabhost"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/default_margin_top">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_bg_selector"/>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:id="@+id/fragment_arterial_pressure_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:layout_marginTop="@dimen/default_margin_top"
+                        android:id="@+id/fragment_arterial_pressure_graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/fragment_pulse_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:layout_marginTop="@dimen/default_margin_top"
+                        android:id="@+id/fragment_pulse_graph"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+                </FrameLayout>
+            </FrameLayout>
+            <TextView
+                android:padding="@dimen/standard_view_margin"
+                android:text="@string/arterial_pressure_help"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </TabHost>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fragment_arterial_pressure_fab"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/default_margin_top"
+        android:src="@drawable/ic_bluetooth_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

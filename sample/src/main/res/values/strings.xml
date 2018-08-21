@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BluetoothAND</string>
+    <string name="heart_rate_help_text">Чтобы добавить новое устройство A&amp;D, зажмите кнопку "Старт" на устройстве до тех пор, пока не появятся буквы Pr, затем нажмите кнопку Соединить</string>
+    <string name="heart_rate_send">Отправить</string>
+    <string name="bluetooth_not_supported">Функция не поддерживается на вашем устройстве</string>
+    <string name="bluetooth_connection_failed">Прибор не найден</string>
+    <string name="bluetooth_no_result">Нет результатов измерений</string>
+    <string name="bluetooth_device_paired">Устройство подключено, теперь можно проводить измерения</string>
+    <string name="bluetooth_device_busy">Устройство занято, повторите попытку через некоторое время</string>
+    <string name="heart_rate_pair">Соединить</string>
+    <string name="arterial_pressure_help">Проведите исследование на устройстве, чтобы добавить новое измерение. Не забудьте предварительно подключить устройство, если вы ещё этого не сделали!</string>
+    <string name="menu_arterial_pressure_info">Информация о давлении</string>
+    <string name="arterial_pressure_title">Артериальное давление</string>
+    <string name="arterial_pressure">Давление</string>
+    <string name="pulse">Пульс</string>
+    <string name="measurement_blood_pressure">Артериальное давление</string>
+    <string name="title_activity_arterial_pressure">ArterialPressureActivity</string>
+    <string name="location_permission">локации</string>
+    <string name="systolic_pressure">Систолическое давление</string>
+    <string name="diastolic_pressure">Диастолическое давление</string>
+    <string name="no_data">Нет данных</string>
+</resources>
